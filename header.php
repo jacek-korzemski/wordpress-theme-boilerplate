@@ -6,4 +6,4 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/style.css" />
 </head>
 <body>
-<?php display_menu('main_menu'); ?>
+<?php display_menu('main-menu'); ?>

@@ -2,12 +2,15 @@
 
 function display_menu($location)
 {
-    wp_nav_menu( 
-        array( 
-        'theme_location' => $location, 
-        'container_class' => 'main-menu' 
-        )
-    ); 
+    if ( isset( get_nav_menu_locations()[$location] ) )
+    {
+        wp_nav_menu( 
+            array( 
+            'theme_location' => $location, 
+            'container_class' => 'main-menu' 
+            )
+        ); 
+    }
 }
 
 function display_pagination($className = 'pagination')
